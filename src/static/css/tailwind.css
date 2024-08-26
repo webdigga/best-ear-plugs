@@ -12,7 +12,7 @@
   --badge-color: #35853a;
 }
 
-h1 {
+h1, h2 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
 }
 
