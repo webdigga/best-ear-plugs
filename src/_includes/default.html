@@ -18,10 +18,12 @@
 	<meta name="google-site-verification" content="5aP3i0LZjFM0gMVbsZvg6YXH1t5-rmrSIloajyoaZm0" />
 
     <title>
-      {% if title %}
+      {% if seoTitle %}
+        {{ seoTitle }}
+      {% elif title %}
         {{ title }}
       {% else %}
-        {{ settings.title }}
+        {{ settings.seoTitle }}
       {% endif %}
     </title>
 
@@ -58,6 +60,8 @@
     
     {% if title %}
       <link rel="canonical" href="{{ env.site }}/{{ title | slugify }}/" />
+    {% else %}
+      <link rel="canonical" href="{{ env.site }}/" />
     {% endif %}
 
     {% if type === 'home' %}

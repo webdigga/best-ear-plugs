@@ -54,10 +54,10 @@
 
 		{% if productCard.data.affiliateLink %}
 			<a target="_blank" rel="noopener" href="{{ productCard.data.affiliateLink }}">
-				<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h2>
+				<h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h3>
 			</a>
 		{% else %}
-			<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h2>
+			<h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h3>
 		{% endif %}
 
 		<p class="mb-3 font-normal text-gray-700 grow">{{ productCard.data.description }}</p>
